@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @Entity
-@Table(name = "inventaio_herramienta")
+@Table(name = "inventario_herramienta")
 public class InventarioHerramienta {
 
     @Id

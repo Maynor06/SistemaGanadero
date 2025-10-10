@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.CodePointLength;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @AllArgsConstructor
@@ -27,7 +28,7 @@ public class InventarioMedicamento {
     @JoinColumn(name = "medicamento_id")
     private Medicamento medicamento;
 
-    private int cantidad;
+    private BigDecimal cantidad;
 
     @Column(name = "fecha_ingreso")
     private LocalDate fechaIngreso;

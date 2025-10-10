@@ -18,6 +18,7 @@ public class Medicamento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_medicamento")
     private Long idMedicamento;
 
     private String nombre;

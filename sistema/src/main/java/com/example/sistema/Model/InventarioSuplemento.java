@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -26,13 +27,13 @@ public class InventarioSuplemento {
     @JoinColumn(name = "suplemento_id")
     private Suplemento suplemento;
 
-    private int cantidad;
+    private BigDecimal cantidad;
 
     @Column(name = "fecha_ingreso")
-    private LocalDateTime fechaIngreso;
+    private LocalDate fechaIngreso;
 
     @Column(name = "fecha_vencimiento")
-    private LocalDateTime fechaVencimiento;
+    private LocalDate fechaVencimiento;
 
     private String lote;
 }

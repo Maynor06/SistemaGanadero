@@ -19,6 +19,7 @@ public class Herramienta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_herramienta")
     private Long idHerramienta;
 
     private String nombre;
